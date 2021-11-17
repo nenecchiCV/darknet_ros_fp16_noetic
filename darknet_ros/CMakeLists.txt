@@ -43,7 +43,7 @@ if (CUDA_FOUND)
     -gencode arch=compute_61,code=[sm_61,compute_61]
     -gencode arch=compute_72,code=[sm_72,compute_72] # Jetson AGX Xavier or TITAN V
     -gencode arch=compute_75,code=[sm_75,compute_75]
-    # -gencode arch=compute_86,code=[sm_86,compute_86] # GeForce RTX 3000 Series
+    -gencode arch=compute_86,code=[sm_86,compute_86] # GeForce RTX 3000 Series
   )
   add_definitions(-DGPU)
 endif()
